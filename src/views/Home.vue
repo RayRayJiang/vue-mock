@@ -32,12 +32,13 @@
 					const { code, data, msg } = res;
 					if (code == 0) {
 						this.listItem = data;
+						console.log('this.listItem', this.listItem)
 					}
 				})
 			},
 			reqDouban() {
 				hotList().then((res) => {
-					console.log(res)
+					console.log('res', res)
 				})
 			}
 		},
