@@ -16,10 +16,10 @@ const commonUrl = process.env.NODE_ENV == 'development' ? 'https://sit.jianxueta
 // 把请求域添加Vue,然后每个组件都可以直接获取它
 Vue.prototype.$commonUrl = commonUrl
 
-//引入配置好的axios
-import axios from './assets/js/axios'
-// 把axios添加到Vue上,然后每个组件中都可以引用这里的axios
-Vue.prototype.$axios = axios
+// //引入配置好的axios
+// import axios from './assets/js/axios'
+// // 把axios添加到Vue上,然后每个组件中都可以引用这里的axios
+// Vue.prototype.$axios = axios
 
 new Vue({
   router,
